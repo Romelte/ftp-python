@@ -7,9 +7,9 @@ from ftplib import FTP
 
 #datos de conexion de prueba a un server
 
-host = 'ftp.iconovirtual.net'
-user = 'u373631942.backup'
-password = 'lucheTTi-01'
+host = '#'
+user = '#'
+password = '#'
 
 #me conecto
 
@@ -18,7 +18,7 @@ try:
     ftp = FTP(host,user,password)
     print("CONEXION ESTABLECIDA")
     print("nos encontramos en la carpeta: "+ftp.pwd() +'\n' )
-    ftp.retrbinary("RETR wp-admin",open("wp-admin", "wb").write)
+    ftp.retrbinary("RETR filename",open("filename", "wb").write)
     ftp.quit()
 
 except Exception as e:
